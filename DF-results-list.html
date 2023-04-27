@@ -1,0 +1,12 @@
+<!-- Make a list of all results -->
+<ul>
+  @for/list[([r results])]{
+   @list{
+  <li>
+    @cdr[(first r)]
+    <br>
+    @cdr[(second r)]
+  </li>
+   }
+  }
+</ul>

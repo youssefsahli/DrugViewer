@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    @for/list[([s sections])]{
+    @list{
+    <div>
+      <h2>@|s|</h2>
+      <p>
+	@let[[(D (hash-ref drug-data s))]]{
+	@if[(hash? D)]{... @|D|}
+	}
+      </p>
+    </div>
+    }}
+  </body>
+</html>
